@@ -7,13 +7,13 @@ all:
 
 # NM only scans dispatcher.d/; a symlink into no-wait.d/ makes it no-wait.
 install:
-	install -m 0755 captive-portal-login $(PREFIX)/bin/captive-portal-login
-	install -m 0755 -o root -g root 90-captive-portal $(DISPATCHER)/no-wait.d/90-captive-portal
-	ln -sf no-wait.d/90-captive-portal $(DISPATCHER)/90-captive-portal
+	install -m 0755 uncaptive $(PREFIX)/bin/uncaptive
+	install -m 0755 -o root -g root 90-uncaptive $(DISPATCHER)/no-wait.d/90-uncaptive
+	ln -sf no-wait.d/90-uncaptive $(DISPATCHER)/90-uncaptive
 
 uninstall:
-	rm -f $(PREFIX)/bin/captive-portal-login $(DISPATCHER)/90-captive-portal \
-		$(DISPATCHER)/no-wait.d/90-captive-portal
+	rm -f $(PREFIX)/bin/uncaptive $(DISPATCHER)/90-uncaptive \
+		$(DISPATCHER)/no-wait.d/90-uncaptive
 
 check:
 	python3 test/fake-portal.py

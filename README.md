@@ -1,4 +1,4 @@
-# captive-portal-login
+# uncaptive
 
 Logs in to known Wi-Fi captive portals without a browser.  Meant to be
 run by NetworkManager when it detects a portal, so train and café
@@ -33,18 +33,18 @@ Supported portals:
 
     sudo make install
 
-This puts `captive-portal-login` in `/usr/local/bin` and the dispatcher
+This puts `uncaptive` in `/usr/local/bin` and the dispatcher
 hook in `/etc/NetworkManager/dispatcher.d/no-wait.d/`, linked from
 `dispatcher.d/` so NetworkManager runs it without waiting.  The hook
 fires on `connectivity-change` with `CONNECTIVITY_STATE=PORTAL` and logs
-to syslog under `captive-portal-login`:
+to syslog under `uncaptive`:
 
-    journalctl -t captive-portal-login
+    journalctl -t uncaptive
 
 ## Run by hand
 
-    captive-portal-login -v            # probe, detect, log in
-    captive-portal-login -v --portal 'https://tib.internet--access.net/'
+    uncaptive -v                 # probe, detect, log in
+    uncaptive -v --portal 'https://tib.internet--access.net/'
 
 Exit status: 0 logged in or no portal, 1 login failed, 2 unknown portal.
 

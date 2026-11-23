@@ -32,7 +32,7 @@ PROBES = [
     "http://detectportal.firefox.com/success.txt",
 ]
 TIMEOUT = 10
-UA = "Mozilla/5.0 (X11; Linux x86_64) captive-portal-login"
+UA = "Mozilla/5.0 (X11; Linux x86_64) uncaptive"
 
 verbose = False
 use_syslog = False
@@ -306,7 +306,7 @@ def main():
     args = ap.parse_args()
     verbose, use_syslog = args.verbose, args.syslog
     if use_syslog:
-        syslog.openlog("captive-portal-login")
+        syslog.openlog("uncaptive")
 
     portal = args.portal
     for attempt in range(args.retries):

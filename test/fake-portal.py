@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: ISC
-"""Fake Icomera and Oxyfi portals; runs captive-portal-login against them."""
+"""Fake Icomera and Oxyfi portals; runs uncaptive against them."""
 import json, os, subprocess, sys, threading, urllib.parse
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-TOOL = os.path.join(HERE, "..", "captive-portal-login")
+TOOL = os.path.join(HERE, "..", "uncaptive")
 
 
 class Portal(BaseHTTPRequestHandler):

@@ -5,4 +5,4 @@
 [ "$2" = "connectivity-change" ] || exit 0
 [ "$CONNECTIVITY_STATE" = "PORTAL" ] || exit 0
 
-exec /usr/local/bin/captive-portal-login --syslog --recheck
+exec /usr/local/bin/uncaptive --syslog --recheck
