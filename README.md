@@ -1,5 +1,7 @@
 # uncaptive
 
+<img align="right" width="128" src="img/logo.svg" alt="uncaptive logo">
+
 Logs in to known Wi-Fi captive portals without a browser.  Meant to be
 run by NetworkManager when it detects a portal, so train and café
 Wi-Fi just works.

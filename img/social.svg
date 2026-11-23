@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <rect width="1280" height="640" fill="#10203a"/>
+  <g fill="none" stroke="#1b3157" stroke-width="3" stroke-linecap="round">
+    <path d="M-40 560H1320M-40 600H1320"/>
+    <path d="M40 548v64M160 548v64M280 548v64M400 548v64M520 548v64M640 548v64M760 548v64M880 548v64M1000 548v64M1120 548v64M1240 548v64"/>
+  </g>
+  <image href="logo.svg" x="110" y="120" width="320" height="320"/>
+  <g font-family="'DejaVu Sans Mono', monospace">
+    <text x="440" y="300" font-size="124" font-weight="bold" fill="#f4f1e8"><tspan fill="#3ddc97">un</tspan>captive</text>
+    <text x="446" y="372" font-size="33" fill="#f4f1e8">Train and café Wi-Fi that just works.</text>
+    <text x="446" y="424" font-size="25" fill="#8fa3c4">Logs in to known captive portals without a browser.</text>
+  </g>
+</svg>
